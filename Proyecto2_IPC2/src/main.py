@@ -559,12 +559,11 @@ class Aplicacion:
                     
                     self.empresas.agregar(empresa)
                 
-                # Actualizar combobox sin usar listas nativas
+                # combobox
                 nombres_empresas = ListaEnlazada()
                 for empresa in self.empresas:
                     nombres_empresas.agregar(empresa.nombre)
                 
-                # Uso mínimo de list() permitido para integración con tkinter
                 self.cmb_empresas['values'] = list(nombres_empresas)
                 self.mostrar_mensaje(f"Configuración cargada: {len(self.empresas)} empresas")
                 
@@ -702,7 +701,7 @@ class Aplicacion:
             nueva_empresa = Empresa(id_empresa, nombre, abreviatura)
             self.empresas.agregar(nueva_empresa)
             
-            # Actualizar combobox sin usar listas nativas
+            #combobox
             nombres_empresas = ListaEnlazada()
             for empresa in self.empresas:
                 nombres_empresas.agregar(empresa.nombre)
@@ -827,7 +826,7 @@ class Aplicacion:
                 for punto in empresa.puntos_atencion:
                     nombres_puntos.agregar(punto.nombre)
                 
-                self.cmb_puntos['values'] = list(nombres_puntos)  # Uso mínimo para tkinter
+                self.cmb_puntos['values'] = list(nombres_puntos) 
                 if len(nombres_puntos) > 0:
                     self.cmb_puntos.current(0)
                 break
@@ -848,7 +847,7 @@ class Aplicacion:
                 estado = "ACTIVO" if escritorio.activo else "INACTIVO"
                 escritorios_info.agregar(f"{escritorio.id} ({escritorio.identificacion}) - {estado}")
             
-            self.cmb_escritorios['values'] = list(escritorios_info)  # Uso mínimo para tkinter
+            self.cmb_escritorios['values'] = list(escritorios_info)  
             if len(escritorios_info) > 0:
                 self.cmb_escritorios.current(0)
 
@@ -866,7 +865,7 @@ class Aplicacion:
         if not self.punto_seleccionado:
             return
         
-        # Calcular estadísticas sin listas nativas
+        # Calcular estadísticas 
         activos = 0
         for escritorio in self.punto_seleccionado.escritorios:
             if escritorio.activo:

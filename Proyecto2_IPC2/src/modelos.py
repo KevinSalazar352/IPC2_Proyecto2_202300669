@@ -1,6 +1,6 @@
 import time
 from estructuras import ListaEnlazada, Cola
-# Modelos 
+
 
 class Transaccion:
     def __init__(self, id_transaccion, nombre, tiempo_atencion):
