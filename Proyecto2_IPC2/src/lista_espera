@@ -1,0 +1,8 @@
+// Lista de Espera
+digraph {
+	rankdir=LR
+	cola [label="Cola de Espera" shape=box]
+	cliente_0 [label="Carlos Jiménez
+DPI: 4561237890101" shape=ellipse]
+	cola -> cliente_0
+}

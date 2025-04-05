@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<listaEmpresas>
+    <empresa id="EMP001">
+        <nombre> Banco Nacional de Guatemala</nombre>
+            <abreviatura>BNG</abreviatura>
+            <listaPuntosAtencion>
+                <puntoAtencion id="PA001">
+                    <nombre>Sucursal Central</nombre>
+                    <direccion>6a. avenida 7-89, Zona 1, Ciudad</direccion>
+                        <listaEscritorios>
+                            <escritorio id="ESC001">
+                                <identificación>E1</identificación>
+                                <encargado>Juan Pérez</encargado>
+                            </escritorio>
+                            <escritorio id="ESC002">
+                                <identificación>E2</identificación>
+                                <encargado>María Gómez</encargado>
+                            </escritorio>
+                            <escritorio id="ESC003">
+                                <identificación>E3</identificación>
+                                <encargado>Carlos Ruiz</encargado>
+                            </escritorio>
+                        </listaEscritorios>
+                </puntoAtencion>
+                <puntoAtencion id="PA002">
+                    <nombre>Sucursal Norte</nombre>
+                    <direccion>5a. calle 12-34, Zona 2, Ciudad</direccion>
+                        <listaEscritorios>
+                            <escritorio id="ESC004">
+                                <identificación>E4</identificación>
+                                <encargado>Ana López</encargado>
+                            </escritorio>
+                            <escritorio id="ESC005">
+                                <identificación>E5</identificación>
+                                <encargado>Pedro Martínez</encargado>
+                            </escritorio>
+                        </listaEscritorios>
+                </puntoAtencion>
+            </listaPuntosAtencion>
+                <listaTransacciones>
+                    <transaccion id="T001">
+                        <nombre>Depósito</nombre>
+                        <tiempoAtencion>5</tiempoAtencion>
+                    </transaccion>
+                    <transaccion id="T002">
+                        <nombre>Retiro</nombre>
+                        <tiempoAtencion>7</tiempoAtencion>
+                    </transaccion>
+                    <transaccion id="T003">
+                        <nombre>Consulta de saldo</nombre>
+                        <tiempoAtencion>3</tiempoAtencion>
+                    </transaccion>
+                    <transaccion id="T004">
+                        <nombre>Pago de servicios</nombre>
+                        <tiempoAtencion>10</tiempoAtencion>
+                    </transaccion>
+                </listaTransacciones>
+    </empresa>
+
+    <empresa id="EMP002">
+        <nombre>Supermercado La Barata</nombre>
+            <abreviatura>SLB</abreviatura>
+            <listaPuntosAtencion>
+                <puntoAtencion id="PA003">
+                    <nombre>Sucursal Centro</nombre>
+                    <direccion>8a. calle 9-10, Zona 1, Ciudad</direccion>
+                        <listaEscritorios>
+                            <escritorio id="ESC006">
+                                <identificación>Caja 1</identificación>
+                                <encargado>Luisa Ramírez</encargado>
+                            </escritorio>
+                            <escritorio id="ESC007">
+                                <identificación>Caja 2</identificación>
+                                <encargado>Roberto Sánchez</encargado>
+                            </escritorio>
+                        </listaEscritorios>
+                </puntoAtencion>
+            </listaPuntosAtencion>
+                <listaTransacciones>
+                    <transaccion id="T005">
+                        <nombre>Compra normal</nombre>
+                        <tiempoAtencion>15</tiempoAtencion>
+                    </transaccion>
+                    <transaccion id="T006">
+                        <nombre>Devolución</nombre>
+                        <tiempoAtencion>20</tiempoAtencion>
+                    </transaccion>
+                </listaTransacciones>
+    </empresa>
+</listaEmpresas>

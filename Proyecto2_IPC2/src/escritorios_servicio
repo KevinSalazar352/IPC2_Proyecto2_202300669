@@ -1,0 +1,19 @@
+// Escritorios de Servicio
+digraph {
+	rankdir=TB
+	punto [label="Punto: Sucursal Central" shape=box]
+	esc_ESC001 [label="Escritorio ESC001
+Encargado: Juan Pérez
+Estado: ACTIVO
+Cliente: Mario López" color=green shape=rectangle]
+	punto -> esc_ESC001
+	esc_ESC002 [label="Escritorio ESC002
+Encargado: María Gómez
+Estado: ACTIVO
+Cliente: Laura Martínez" color=green shape=rectangle]
+	punto -> esc_ESC002
+	esc_ESC003 [label="Escritorio ESC003
+Encargado: Carlos Ruiz
+Estado: INACTIVO" color=red shape=rectangle]
+	punto -> esc_ESC003
+}
